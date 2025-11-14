@@ -13,7 +13,7 @@ const navItems: string[] = ["about", "projects", "contact"];
 
 export default function Navigation() {
     return (
-        <header className="sticky p-4 w-screen flex left-0 flow top-0 justify-between items-center">
+        <header className="sticky py-4 px-6 flex left-0 flow top-0 justify-between items-center bg-white dark:bg-black z-2 shadow-sm">
             <p className="text-orange-primary text-2xl font-cursive">Chris.E</p>
             <nav>
                 <ul className="sm:flex space-x-4 hidden">
@@ -33,7 +33,7 @@ export default function Navigation() {
                 </ul>
                 <div className="sm:hidden">
                     <Sheet>
-                        <SheetTrigger>
+                        <SheetTrigger className="cursor-pointer">
                             <Menu />
                         </SheetTrigger>
                         <SheetContent className="w-[220px]" side="left">
@@ -54,7 +54,7 @@ export default function Navigation() {
                                         </li>
                                     );
                                 })}
-                                <li className="cursor-pointer mx-auto transition hover:text-orange-primary">
+                                <li className="cursor-pointer mx-auto transition hover:text-orange-primary hov">
                                     <DarkMode />
                                 </li>
                             </ul>

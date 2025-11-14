@@ -1,4 +1,4 @@
-import Navigation from "./navigation.tsx";
+import Navigation from "@/components/layouts/navigation";
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
     return (

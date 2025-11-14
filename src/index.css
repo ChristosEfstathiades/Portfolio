@@ -22,7 +22,7 @@
 }
 
 @theme {
-    --color-orange-primary: #ff7518;
+    --color-orange-primary: rgb(255, 117, 24);
     --font-cursive: "Pacifico", cursive;
 }
 
