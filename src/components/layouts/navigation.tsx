@@ -1,17 +1,66 @@
 import DarkMode from "../dark-mode.tsx";
+import { Menu } from "lucide-react";
+import {
+    Sheet,
+    SheetContent,
+    SheetDescription,
+    SheetHeader,
+    SheetTitle,
+    SheetTrigger,
+} from "@/components/ui/sheet";
+
+const navItems: string[] = ["about", "projects", "contact"];
+
 export default function Navigation() {
     return (
-        <header className="fixed p-4 w-screen flex left-0 flow top-0 justify-between">
-            <p>Christos Efstathiades</p>
+        <header className="sticky p-4 w-screen flex left-0 flow top-0 justify-between items-center">
+            <p className="text-orange-primary text-2xl font-cursive">Chris.E</p>
             <nav>
-                <ul className="flex space-x-4">
-                    <li>Home</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
-                    <li>
+                <ul className="sm:flex space-x-4 hidden">
+                    {navItems.map((navItem, index) => {
+                        return (
+                            <li
+                                key={index}
+                                className="font-medium capitalize cursor-pointer transition hover:text-orange-primary"
+                            >
+                                <a href={`#${navItem}`}>{navItem}</a>
+                            </li>
+                        );
+                    })}
+                    <li className="cursor-pointer transition hover:text-orange-primary">
                         <DarkMode />
                     </li>
                 </ul>
+                <div className="sm:hidden">
+                    <Sheet>
+                        <SheetTrigger>
+                            <Menu />
+                        </SheetTrigger>
+                        <SheetContent className="w-[220px]" side="left">
+                            <SheetHeader>
+                                <SheetTitle></SheetTitle>
+                                <SheetDescription></SheetDescription>
+                            </SheetHeader>
+                            <ul className="flex flex-col space-y-4 text-center">
+                                {navItems.map((navItem, index) => {
+                                    return (
+                                        <li
+                                            key={index}
+                                            className="font-medium text-2xl capitalize cursor-pointer transition hover:text-orange-primary"
+                                        >
+                                            <a href={`#${navItem}`}>
+                                                {navItem}
+                                            </a>
+                                        </li>
+                                    );
+                                })}
+                                <li className="cursor-pointer mx-auto transition hover:text-orange-primary">
+                                    <DarkMode />
+                                </li>
+                            </ul>
+                        </SheetContent>
+                    </Sheet>
+                </div>
             </nav>
         </header>
     );
