@@ -1,9 +1,10 @@
-import "./App.css";
-
+import AppLayout from "./components/layouts/app-layout.tsx";
 function App() {
   return (
     <>
-      <p>hello</p>
+      <AppLayout>
+        <div></div>
+      </AppLayout>
     </>
   );
 }
