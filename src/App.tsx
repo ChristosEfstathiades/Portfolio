@@ -1,6 +1,9 @@
 import AppLayout from "@/components/layouts/app-layout";
 import SubHeading from "@/components/sub-heading";
 import face from "@/assets/myface.webp";
+import soullink from "@/assets/soullink.png";
+import Project from "@/components/project";
+import Tool from "@/components/tool";
 function App() {
     return (
         <>
@@ -19,33 +22,80 @@ function App() {
                     </div>
                 </section>
 
-                <section id="about" className="py-8 sm:py-16 px-6">
+                <section
+                    id="about"
+                    className="py-8 sm:py-16 max-w-[80%] mx-auto"
+                >
                     <SubHeading title="About Me" />
-                    <div className="flex flex-col sm:flex-row items-center sm:items-start">
+                    <div className="flex flex-col max-w-5xl mx-auto sm:flex-row items-center sm:items-start gap-16">
                         <img
-                            className="size-40 shrink-0 mr-4 object-cover rounded-full shadow-[0_0_15px_2px_rgba(255,117,24,1)]"
+                            className="sm:size-50 size-40 shrink-0  object-cover rounded-full shadow-[0_0_15px_2px_rgba(255,117,24,1)]"
                             src={face}
-                            alt=""
+                            alt="My Face"
                         />
-                        <p className="w">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Assumenda doloremque accusantium magnam ea
-                            earum eaque perferendis similique? Doloribus ipsum
-                            itaque, enim necessitatibus velit id explicabo
-                            blanditiis cum animi fugiat vero deleniti. Quos
-                            officiis hic accusamus iure reiciendis vel
-                            repudiandae recusandae ipsum facere! Recusandae
-                            neque quaerat corrupti necessitatibus. Quibusdam
-                            velit quod ea similique odio vero consequuntur,
-                            mollitia repellat laudantium neque recusandae optio
-                            sapiente id, quam magni tempora alias iste unde sed
-                            veniam eveniet iure reprehenderit ullam tempore. Hic
-                            inventore harum repudiandae aperiam saepe, ad magnam
-                            delectus eligendi ullam, nesciunt, veniam tempore!
-                            Magnam, ducimus. At, eaque! Dolores vel
-                            exercitationem est rem quibusdam.{" "}
+                        <p className="text-[#737373]">
+                            I'm a recent graduate from the University of
+                            Manchester with a{" "}
+                            <b>Bachelor's degree in Computer Science</b> who is
+                            looking to begin my career in Software Development.
+                            I have experience developing full stack web
+                            applications but I enjoy solving problems in all
+                            areas of Software Engineering such as Data Science,
+                            Embedded Systems, Machine Learning, and more. I'm
+                            passionate about using the right tools for the job
+                            and continuously learning new technologies.
                         </p>
                     </div>
+                </section>
+
+                <section
+                    id="projects"
+                    className="py-8 sm:py-16 max-w-[80%] mx-auto"
+                >
+                    <SubHeading title="My Projects" />
+                    <section>
+                        <Project>
+                            <h3 className="text-2xl font-bold mb-4">
+                                Soullink
+                            </h3>
+                            <img
+                                className="max-w-lg w-full mx-auto rounded-lg block duration-300 transition"
+                                src={soullink}
+                                alt="Screenshot of Soullink"
+                            />
+                            <p className="my-2 max-w-lg w-full mx-auto">
+                                description
+                            </p>
+                            <div className="flex items-center gap-2">
+                                <h4 className="text-lg pl-2.5 border-l-3 font-bold border-orange-primary">
+                                    Tools
+                                </h4>
+                                <Tool name="PHP" />
+                                <Tool name="Laravel" />
+                                <Tool name="React" />
+                                <Tool name="JavaScript" />
+                                <Tool name="SQLite" />
+                                <Tool name="Tailwind" />
+                            </div>
+                        </Project>
+                    </section>
+                </section>
+
+                <section
+                    id="contact"
+                    className="py-8 sm:py-16 max-w-[80%] mx-auto"
+                >
+                    <SubHeading title="Contact Me" />
+                    <p className="text-[#737373]">
+                        Please contact me directly at{" "}
+                        <a
+                            className="underline"
+                            href="mailto:christosefstathiades@outlook.com"
+                        >
+                            christosefstathiades@outlook.com{" "}
+                        </a>{" "}
+                        or through this form.
+                    </p>
                 </section>
             </AppLayout>
         </>
