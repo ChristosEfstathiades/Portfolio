@@ -4,7 +4,10 @@ import face from "@/assets/myface.webp";
 import soullink from "@/assets/soullink.png";
 import Project from "@/components/project";
 import Tool from "@/components/tool";
-
+import Laravel from "@/assets/Laravel.svg";
+const images = {
+    Laravel,
+};
 function App() {
     return (
         <>
@@ -76,7 +79,7 @@ function App() {
                                 <h4 className="text-lg pl-2.5 border-l-3 font-bold border-orange-primary">
                                     Tools
                                 </h4>
-                                <Tool name="Laravel" />
+                                <Tool name={images["Laravel"]} />
                                 <Tool name="React" />
                                 <Tool name="Tailwind" />
                                 <Tool name="SQLite" />
