@@ -128,10 +128,11 @@ function App() {
                             <ProjectDescription>
                                 Python web crawler that retrieves hundreds of
                                 counts of Linked Data from Signposting links on
-                                the scholarly web. Constructs Knowledge Graphs
-                                in RDF format using the associated Linked Data.
-                                Stores Knowledge Graphs in a triple store
-                                database. Displays Knowledge graphs and executes
+                                the scholarly web and constructs Knowledge
+                                Graphs in RDF format using the associated Linked
+                                Data. Stores each respective Knowledge Graph in
+                                a triple store database (Apache Jena Fuseki).
+                                Displays Knowledge graphs and executes
                                 explorative queries using SPARQL.
                             </ProjectDescription>
                             <div className="flex items-center gap-2 flex-wrap">
@@ -194,9 +195,9 @@ function App() {
                         Please contact me directly at{" "}
                         <a
                             className="underline"
-                            href="mailto:christosefstathiades@outlook.com"
+                            href="mailto:christos.efstathiades@outlook.com"
                         >
-                            christosefstathiades@outlook.com{" "}
+                            christos.efstathiades@outlook.com{" "}
                         </a>{" "}
                     </p>
                 </section>
