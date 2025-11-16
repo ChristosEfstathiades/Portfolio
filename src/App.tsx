@@ -3,6 +3,7 @@ import SubHeading from "@/components/sub-heading";
 import face from "@/assets/myface.webp";
 import soullink from "@/assets/soullink.png";
 import signposting from "@/assets/signposting.png";
+import pathfinding from "@/assets/pathfinding.png";
 import Project from "@/components/project";
 import Tool from "@/components/tool";
 import Laravel from "@/assets/Laravel.svg";
@@ -12,6 +13,9 @@ import SQLite from "@/assets/SQLite.svg";
 import GitHub from "@/assets/GitHub.svg";
 import Python from "@/assets/Python.svg";
 import Flask from "@/assets/Flask.svg";
+import JavaScript from "@/assets/JavaScript.svg";
+import ProjectTitle from "@/components/project-title";
+import ProjectDescription from "@/components/project-description";
 const images = {
     Laravel,
     React,
@@ -20,6 +24,7 @@ const images = {
     Python,
     Flask,
     GitHub,
+    JavaScript,
 };
 function App() {
     return (
@@ -72,22 +77,20 @@ function App() {
                     <SubHeading title="My Projects" />
                     <section>
                         <Project>
-                            <h3 className="text-2xl font-bold mb-4">
-                                Soullink
-                            </h3>
+                            <ProjectTitle title="Soullink" />
                             <img
                                 className="max-w-lg w-full mx-auto rounded-lg block duration-300 transition"
                                 src={soullink}
                                 alt="Screenshot of Soullink"
                             />
-                            <p className="my-3">
+                            <ProjectDescription>
                                 Soullink is a teambuilding web application for 2
                                 player Pokemon Nuzlockes (A.K.A a Soullink).
                                 Soullink lets users create, view, edit, and add
                                 Pokemon to their Party. Soullink provides a team
                                 generator that suggests possible teams to the
                                 user that obey the Soullink restrictions.
-                            </p>
+                            </ProjectDescription>
                             <div className="flex items-center gap-2 flex-wrap">
                                 <h4 className="text-lg pl-2.5 border-l-3 font-bold border-orange-primary">
                                     Tools
@@ -103,17 +106,24 @@ function App() {
                                 />
                                 <Tool name="SQLite" image={images["SQLite"]} />
                             </div>
+                            <a
+                                href="https://github.com/ChristosEfstathiades/Soullink"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex mt-3 items-center self-baseline transition px-3 hover:bg-accent font-semibold py-1 gap-1 bg-white dark:bg-[#111] shadow rounded"
+                            >
+                                <img className="h-5" src={GitHub} alt="" />
+                                <p>GitHub</p>
+                            </a>
                         </Project>
                         <Project>
-                            <h3 className="text-2xl font-bold mb-4">
-                                Signposting Knowledge Graph Tool
-                            </h3>
+                            <ProjectTitle title="Signposting Knowledge Graph Tool" />
                             <img
                                 className="max-w-lg w-full mx-auto rounded-lg block duration-300 transition"
                                 src={signposting}
                                 alt="Screenshot of Signposting Knowledge Graph Tool"
                             />
-                            <p className="my-3">
+                            <ProjectDescription>
                                 Python web crawler that retrieves hundreds of
                                 counts of Linked Data from Signposting links on
                                 the scholarly web. Constructs Knowledge Graphs
@@ -121,7 +131,7 @@ function App() {
                                 Stores Knowledge Graphs in a triple store
                                 database. Displays Knowledge graphs and executes
                                 explorative queries using SPARQL.
-                            </p>
+                            </ProjectDescription>
                             <div className="flex items-center gap-2 flex-wrap">
                                 <h4 className="text-lg pl-2.5 border-l-3 font-bold border-orange-primary">
                                     Tools
@@ -129,6 +139,46 @@ function App() {
                                 <Tool name="Python" image={images["Python"]} />
                                 <Tool name="Flask" image={images["Flask"]} />
                             </div>
+                            <a
+                                href="https://github.com/ChristosEfstathiades/3rdYearProject"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex mt-3 items-center self-baseline transition px-3 hover:bg-accent font-semibold py-1 gap-1 bg-white dark:bg-[#111] shadow rounded"
+                            >
+                                <img className="h-5" src={GitHub} alt="" />
+                                <p>GitHub</p>
+                            </a>
+                        </Project>
+                        <Project>
+                            <ProjectTitle title="Pathfinding Visualiser Tool " />
+                            <img
+                                className="max-w-lg w-full mx-auto rounded-lg block duration-300 transition"
+                                src={pathfinding}
+                                alt="Screenshot of Pathfinding Visualiser Tool"
+                            />
+                            <ProjectDescription>
+                                {" "}
+                                Visualisation tool for pathfinding algorithms
+                                including A* and Dijkstra’s algorithm.
+                            </ProjectDescription>
+                            <div className="flex items-center gap-2 flex-wrap">
+                                <h4 className="text-lg pl-2.5 border-l-3 font-bold border-orange-primary">
+                                    Tools
+                                </h4>
+                                <Tool
+                                    name="JavaScript"
+                                    image={images["JavaScript"]}
+                                />
+                            </div>
+                            <a
+                                href="https://github.com/ChristosEfstathiades/PathfindingVisualiser"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex mt-3 items-center self-baseline transition px-3 hover:bg-accent font-semibold py-1 gap-1 bg-white dark:bg-[#111] shadow rounded"
+                            >
+                                <img className="h-5" src={GitHub} alt="" />
+                                <p>GitHub</p>
+                            </a>
                         </Project>
                     </section>
                 </section>
