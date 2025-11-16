@@ -2,17 +2,24 @@ import AppLayout from "@/components/layouts/app-layout";
 import SubHeading from "@/components/sub-heading";
 import face from "@/assets/myface.webp";
 import soullink from "@/assets/soullink.png";
+import signposting from "@/assets/signposting.png";
 import Project from "@/components/project";
 import Tool from "@/components/tool";
 import Laravel from "@/assets/Laravel.svg";
 import React from "@/assets/React.svg";
 import Tailwind from "@/assets/Tailwind.svg";
 import SQLite from "@/assets/SQLite.svg";
+import GitHub from "@/assets/GitHub.svg";
+import Python from "@/assets/Python.svg";
+import Flask from "@/assets/Flask.svg";
 const images = {
     Laravel,
     React,
     Tailwind,
     SQLite,
+    Python,
+    Flask,
+    GitHub,
 };
 function App() {
     return (
@@ -95,6 +102,32 @@ function App() {
                                     image={images["Tailwind"]}
                                 />
                                 <Tool name="SQLite" image={images["SQLite"]} />
+                            </div>
+                        </Project>
+                        <Project>
+                            <h3 className="text-2xl font-bold mb-4">
+                                Signposting Knowledge Graph Tool
+                            </h3>
+                            <img
+                                className="max-w-lg w-full mx-auto rounded-lg block duration-300 transition"
+                                src={signposting}
+                                alt="Screenshot of Signposting Knowledge Graph Tool"
+                            />
+                            <p className="my-3">
+                                Python web crawler that retrieves hundreds of
+                                counts of Linked Data from Signposting links on
+                                the scholarly web. Constructs Knowledge Graphs
+                                in RDF format using the associated Linked Data.
+                                Stores Knowledge Graphs in a triple store
+                                database. Displays Knowledge graphs and executes
+                                explorative queries using SPARQL.
+                            </p>
+                            <div className="flex items-center gap-2 flex-wrap">
+                                <h4 className="text-lg pl-2.5 border-l-3 font-bold border-orange-primary">
+                                    Tools
+                                </h4>
+                                <Tool name="Python" image={images["Python"]} />
+                                <Tool name="Flask" image={images["Flask"]} />
                             </div>
                         </Project>
                     </section>
