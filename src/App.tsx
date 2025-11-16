@@ -4,6 +4,7 @@ import face from "@/assets/myface.webp";
 import soullink from "@/assets/soullink.png";
 import Project from "@/components/project";
 import Tool from "@/components/tool";
+
 function App() {
     return (
         <>
@@ -63,19 +64,22 @@ function App() {
                                 src={soullink}
                                 alt="Screenshot of Soullink"
                             />
-                            <p className="my-2 max-w-lg w-full mx-auto">
-                                description
+                            <p className="my-3">
+                                Soullink is a teambuilding web application for 2
+                                player Pokemon Nuzlockes (A.K.A a Soullink).
+                                Soullink lets users create, view, edit, and add
+                                Pokemon to their Party. Soullink provides a team
+                                generator that suggests possible teams to the
+                                user that obey the Soullink restrictions.
                             </p>
-                            <div className="flex items-center gap-2">
+                            <div className="flex items-center gap-2 flex-wrap">
                                 <h4 className="text-lg pl-2.5 border-l-3 font-bold border-orange-primary">
                                     Tools
                                 </h4>
-                                <Tool name="PHP" />
                                 <Tool name="Laravel" />
                                 <Tool name="React" />
-                                <Tool name="JavaScript" />
-                                <Tool name="SQLite" />
                                 <Tool name="Tailwind" />
+                                <Tool name="SQLite" />
                             </div>
                         </Project>
                     </section>
