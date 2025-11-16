@@ -31,7 +31,7 @@ function App() {
         <>
             <AppLayout>
                 <section className="hero py-24 text-center text-white bg-[linear-gradient(-45deg,#ffbf00,#ffad00,#ff9b00,#ff880b,#ff7518)]">
-                    <div>
+                    <div className="fadeinUp">
                         <h1 className="text-5xl font-bold">
                             Christos Efstathiades
                         </h1>
@@ -46,7 +46,7 @@ function App() {
 
                 <section
                     id="about"
-                    className="py-8 sm:py-16 max-w-[80%] mx-auto"
+                    className="py-8 sm:py-16 max-w-[80%] mx-auto fadeinUp"
                 >
                     <SubHeading title="About Me" />
                     <div className="flex flex-col max-w-5xl mx-auto sm:flex-row items-center sm:items-start gap-16">
@@ -56,16 +56,18 @@ function App() {
                             alt="My Face"
                         />
                         <p className="text-[#737373]">
-                            I'm a recent graduate from the University of
-                            Manchester with a{" "}
-                            <b>Bachelor's degree in Computer Science</b> who is
-                            looking to begin my career in Software Development.
-                            I have experience developing full stack web
-                            applications but I enjoy solving problems in all
-                            areas of Software Engineering such as Data Science,
-                            Embedded Systems, Machine Learning, and more. I'm
-                            passionate about using the right tools for the job
-                            and continuously learning new technologies.
+                            I'm a recent{" "}
+                            <b>
+                                Computer Science graduate from the University of
+                                Manchester
+                            </b>
+                            , looking to begin my career in Software
+                            Development. I've built full-stack web applications
+                            and enjoy tackling problems across the wider field
+                            of Software Engineering, including data science,
+                            embedded systems, and machine learning. I'm
+                            motivated by using the right tools for the job and
+                            continuously expanding my skill set.
                         </p>
                     </div>
                 </section>
