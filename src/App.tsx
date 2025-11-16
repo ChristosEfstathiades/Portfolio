@@ -196,7 +196,6 @@ function App() {
                         >
                             christosefstathiades@outlook.com{" "}
                         </a>{" "}
-                        or through this form.
                     </p>
                 </section>
             </AppLayout>
