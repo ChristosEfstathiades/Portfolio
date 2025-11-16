@@ -5,8 +5,14 @@ import soullink from "@/assets/soullink.png";
 import Project from "@/components/project";
 import Tool from "@/components/tool";
 import Laravel from "@/assets/Laravel.svg";
+import React from "@/assets/React.svg";
+import Tailwind from "@/assets/Tailwind.svg";
+import SQLite from "@/assets/SQLite.svg";
 const images = {
     Laravel,
+    React,
+    Tailwind,
+    SQLite,
 };
 function App() {
     return (
@@ -79,10 +85,16 @@ function App() {
                                 <h4 className="text-lg pl-2.5 border-l-3 font-bold border-orange-primary">
                                     Tools
                                 </h4>
-                                <Tool name={images["Laravel"]} />
-                                <Tool name="React" />
-                                <Tool name="Tailwind" />
-                                <Tool name="SQLite" />
+                                <Tool
+                                    name="Laravel"
+                                    image={images["Laravel"]}
+                                />
+                                <Tool name="React" image={images["React"]} />
+                                <Tool
+                                    name="Tailwind"
+                                    image={images["Tailwind"]}
+                                />
+                                <Tool name="SQLite" image={images["SQLite"]} />
                             </div>
                         </Project>
                     </section>
