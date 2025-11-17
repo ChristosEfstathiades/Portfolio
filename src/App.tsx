@@ -5,7 +5,8 @@ import soullink from "@/assets/soullink.png";
 import signposting from "@/assets/signposting.png";
 import pathfinding from "@/assets/pathfinding.png";
 import Project from "@/components/project";
-import Tool from "@/components/tool";
+import Tools from "@/components/tools";
+import ToolsTitle from "@/components/tools-title";
 import Laravel from "@/assets/Laravel.svg";
 import React from "@/assets/React.svg";
 import Tailwind from "@/assets/Tailwind.svg";
@@ -16,15 +17,16 @@ import Flask from "@/assets/Flask.svg";
 import JavaScript from "@/assets/JavaScript.svg";
 import ProjectTitle from "@/components/project-title";
 import ProjectDescription from "@/components/project-description";
-const images = {
-    Laravel,
-    React,
-    Tailwind,
-    SQLite,
-    Python,
-    Flask,
-    GitHub,
-    JavaScript,
+import ProjectLinks from "@/components/project-links";
+const images: { [key: string]: string } = {
+    Laravel: Laravel,
+    React: React,
+    Tailwind: Tailwind,
+    SQLite: SQLite,
+    Python: Python,
+    Flask: Flask,
+    GitHub: GitHub,
+    JavaScript: JavaScript,
 };
 function App() {
     return (
@@ -93,30 +95,21 @@ function App() {
                                 generator that suggests possible teams to the
                                 user that obey the Soullink restrictions.
                             </ProjectDescription>
+                            {/* TODO: move div and toolstitle into tools component */}
                             <div className="flex items-center gap-2 flex-wrap">
-                                <h4 className="text-lg pl-2.5 border-l-3 font-bold border-orange-primary">
-                                    Tools
-                                </h4>
-                                <Tool
-                                    name="Laravel"
-                                    image={images["Laravel"]}
+                                <ToolsTitle />
+
+                                <Tools
+                                    tools={[
+                                        "Laravel",
+                                        "React",
+                                        "Tailwind",
+                                        "SQLite",
+                                    ]}
+                                    images={images}
                                 />
-                                <Tool name="React" image={images["React"]} />
-                                <Tool
-                                    name="Tailwind"
-                                    image={images["Tailwind"]}
-                                />
-                                <Tool name="SQLite" image={images["SQLite"]} />
                             </div>
-                            <a
-                                href="https://github.com/ChristosEfstathiades/Soullink"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex mt-3 items-center self-baseline transition px-3 hover:bg-accent font-semibold py-1 gap-1 bg-white dark:bg-[#111] shadow rounded"
-                            >
-                                <img className="h-5" src={GitHub} alt="" />
-                                <p>GitHub</p>
-                            </a>
+                            <ProjectLinks github="https://github.com/ChristosEfstathiades/Soullink" />
                         </Project>
                         <Project>
                             <ProjectTitle title="Signposting Knowledge Graph Tool" />
@@ -136,21 +129,13 @@ function App() {
                                 explorative queries using SPARQL.
                             </ProjectDescription>
                             <div className="flex items-center gap-2 flex-wrap">
-                                <h4 className="text-lg pl-2.5 border-l-3 font-bold border-orange-primary">
-                                    Tools
-                                </h4>
-                                <Tool name="Python" image={images["Python"]} />
-                                <Tool name="Flask" image={images["Flask"]} />
+                                <ToolsTitle />
+                                <Tools
+                                    tools={["Python", "Flask"]}
+                                    images={images}
+                                />
                             </div>
-                            <a
-                                href="https://github.com/ChristosEfstathiades/3rdYearProject"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex mt-3 items-center self-baseline transition px-3 hover:bg-accent font-semibold py-1 gap-1 bg-white dark:bg-[#111] shadow rounded"
-                            >
-                                <img className="h-5" src={GitHub} alt="" />
-                                <p>GitHub</p>
-                            </a>
+                            <ProjectLinks github="https://github.com/ChristosEfstathiades/3rdYearProject" />
                         </Project>
                         <Project>
                             <ProjectTitle title="Pathfinding Visualiser Tool " />
@@ -165,23 +150,13 @@ function App() {
                                 including A* and Dijkstra’s algorithm.
                             </ProjectDescription>
                             <div className="flex items-center gap-2 flex-wrap">
-                                <h4 className="text-lg pl-2.5 border-l-3 font-bold border-orange-primary">
-                                    Tools
-                                </h4>
-                                <Tool
-                                    name="JavaScript"
-                                    image={images["JavaScript"]}
-                                />
+                                <ToolsTitle />
+                                <Tools tools={["JavaScript"]} images={images} />
                             </div>
-                            <a
-                                href="https://github.com/ChristosEfstathiades/PathfindingVisualiser"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex mt-3 items-center self-baseline transition px-3 hover:bg-accent font-semibold py-1 gap-1 bg-white dark:bg-[#111] shadow rounded"
-                            >
-                                <img className="h-5" src={GitHub} alt="" />
-                                <p>GitHub</p>
-                            </a>
+                            <ProjectLinks
+                                github="https://github.com/ChristosEfstathiades/PathfindingVisualiser"
+                                site="https://pathfindingnea.netlify.app"
+                            />
                         </Project>
                     </section>
                 </section>
