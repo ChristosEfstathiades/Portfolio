@@ -18,6 +18,7 @@ import JavaScript from "@/assets/JavaScript.svg";
 import ProjectTitle from "@/components/project-title";
 import ProjectDescription from "@/components/project-description";
 import ProjectLinks from "@/components/project-links";
+import { Copyright } from "lucide-react";
 const images: { [key: string]: string } = {
     Laravel: Laravel,
     React: React,
@@ -176,6 +177,12 @@ function App() {
                         </a>{" "}
                     </p>
                 </section>
+
+                <footer className="grid place-items-center bg-[#333] h-25">
+                    <p className="text-white/70 flex items-center gap-1">
+                        <Copyright size={16} /> 2025 Christos Efstathiades
+                    </p>
+                </footer>
             </AppLayout>
         </>
     );
