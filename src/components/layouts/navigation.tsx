@@ -22,7 +22,7 @@ export default function Navigation() {
                     Chris.E
                 </a>
                 <nav>
-                    <ul className="sm:flex space-x-4 hidden">
+                    <ul className="sm:flex space-x-4 hidden sm:items-center">
                         {navItems.map((navItem, index) => {
                             return (
                                 <li
@@ -33,7 +33,7 @@ export default function Navigation() {
                                 </li>
                             );
                         })}
-                        <li className="cursor-pointer transition hover:text-orange-primary">
+                        <li className="cursor-pointer transition dark:hover:bg-[#333]  rounded-full hover:bg-black/5 p-1">
                             <DarkMode />
                         </li>
                     </ul>
@@ -52,7 +52,7 @@ export default function Navigation() {
                                         return (
                                             <li
                                                 key={index}
-                                                className="font-medium text-2xl capitalize cursor-pointer transition hover:text-orange-primary"
+                                                className="font-medium text-3xl capitalize cursor-pointer transition hover:text-orange-primary"
                                             >
                                                 <a href={`#${navItem}`}>
                                                     {navItem}
@@ -60,8 +60,8 @@ export default function Navigation() {
                                             </li>
                                         );
                                     })}
-                                    <li className="cursor-pointer mx-auto transition hover:text-orange-primary hov">
-                                        <DarkMode />
+                                    <li className="cursor-pointer mx-auto transition dark:hover:bg-[#333]  rounded-full hover:bg-black/5 p-1">
+                                        <DarkMode size={30} />
                                     </li>
                                 </ul>
                             </SheetContent>

@@ -1,7 +1,7 @@
 import { Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 
-export default function DarkMode() {
+export default function DarkMode({ ...props }) {
     const [darkMode, setDarkMode] = useState(() => {
         return localStorage.getItem("theme") === "dark";
     });
@@ -18,7 +18,7 @@ export default function DarkMode() {
     return (
         <div onClick={() => setDarkMode(!darkMode)}>
             {/* <Moon /> */}
-            {darkMode ? <Sun /> : <Moon />}
+            {darkMode ? <Sun {...props} /> : <Moon {...props} />}
         </div>
     );
 }
