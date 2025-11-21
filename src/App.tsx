@@ -110,7 +110,10 @@ function App() {
                                     images={images}
                                 />
                             </div>
-                            <ProjectLinks github="https://github.com/ChristosEfstathiades/Soullink" />
+                            <ProjectLinks
+                                github="https://github.com/ChristosEfstathiades/Soullink"
+                                site="https://soullink.christosefstathiades.com"
+                            />
                         </Project>
                         <Project>
                             <ProjectTitle title="Signposting Knowledge Graph Tool" />
