@@ -17,9 +17,9 @@ export default function Navigation() {
             <div className="max-w-[80%] mx-auto flex justify-between items-center">
                 <a
                     href="#"
-                    className="text-orange-primary text-2xl font-cursive"
+                    className="text-orange-primary font-semibold text-xl sm:text-2xl"
                 >
-                    Chris.E
+                    Christos Efstathiades
                 </a>
                 <nav>
                     <ul className="sm:flex space-x-4 hidden sm:items-center">
@@ -37,7 +37,7 @@ export default function Navigation() {
                             <DarkMode />
                         </li>
                     </ul>
-                    <div className="sm:hidden">
+                    <div className="sm:hidden flex items-center">
                         <Sheet>
                             <SheetTrigger className="cursor-pointer">
                                 <Menu />
