@@ -19,7 +19,7 @@ export default function Navigation() {
                     href="#"
                     className="text-orange-primary font-semibold text-xl sm:text-2xl"
                 >
-                    Christos Efstathiades
+                    Chris Efstathiades
                 </a>
                 <nav>
                     <ul className="sm:flex space-x-4 hidden sm:items-center">
