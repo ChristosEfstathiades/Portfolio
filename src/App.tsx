@@ -180,7 +180,7 @@ function App() {
 
                 <footer className="grid place-items-center bg-[#333] h-25">
                     <p className="text-white/70 flex items-center gap-1">
-                        <Copyright size={16} /> 2025 Christos Efstathiades
+                        <Copyright size={16} /> 2026 Christos Efstathiades
                     </p>
                 </footer>
             </AppLayout>
