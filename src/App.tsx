@@ -59,8 +59,8 @@ function App() {
                             alt="My Face"
                         />
                         <p className="text-[#737373]">
-                            Hi I'm Chris, an{" "}
-                            <b>Embedded Software Engineer at IQHQ</b> and a
+                            Hi I'm Chris, a{" "}
+                            <b>Software Engineer at IQHQ</b> and a
                             Computer Science graduate from the University of
                             Manchester. I've built full-stack web applications
                             and enjoy tackling problems across the wider field
