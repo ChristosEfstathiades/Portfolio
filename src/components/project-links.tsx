@@ -40,7 +40,7 @@ export default function ProjectLinks({
                 href={github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center transition duration-0 hover:duration-150 px-3 hover:bg-accent font-semibold py-1 gap-1 bg-white dark:bg-[#111] shadow rounded"
+                className="flex items-center transition duration-0 hover:duration-150 px-3.5 hover:bg-accent font-medium py-[7px] gap-1.5 text-sm bg-[#f6f6f4] dark:bg-[#161616] border border-[#e7e7e4] dark:border-[#2c2c2c] rounded-lg"
             >
                 <img
                     className="h-5"
@@ -56,7 +56,7 @@ export default function ProjectLinks({
                     href={site}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center transition duration-0 hover:duration-150 px-3 hover:bg-accent font-semibold py-1 gap-1 bg-white dark:bg-[#111] shadow rounded"
+                    className="flex items-center transition duration-0 hover:duration-150 px-3.5 hover:bg-accent font-medium py-[7px] gap-1.5 text-sm bg-[#f6f6f4] dark:bg-[#161616] border border-[#e7e7e4] dark:border-[#2c2c2c] rounded-lg"
                 >
                     <ExternalLink size={20} />
                     <p>Site</p>
