@@ -33,34 +33,34 @@ function App() {
     return (
         <>
             <AppLayout>
-                <section className="hero py-24 text-center text-white bg-[linear-gradient(-45deg,#ffbf00,#ffad00,#ff9b00,#ff880b,#ff7518)]">
+                <section className="hero py-30 text-center text-white bg-[linear-gradient(-45deg,#ffbf00,#ffad00,#ff9b00,#ff880b,#ff7518)] ">
                     <div className="fadeinUp">
-                        <h1 className="text-5xl font-bold">
+                        <h1 className="text-5xl font-bold tracking-tight">
                             Christos Efstathiades
                         </h1>
-                        <p className="mt-12 text-2xl">
+                        <p className="mt-5 text-2xl font-medium">
                             Full Stack Software Engineer
                         </p>
-                        <p className="mt-2 text-lg">
-                            Web Applications | Data Science | Embedded Software
+                        <p className="mt-2.5 text-base text-white/85 tracking-wide">
+                            Web Applications · Data Science · Embedded Software
                         </p>
                     </div>
                 </section>
 
                 <section
                     id="about"
-                    className="py-8 sm:py-16 max-w-[80%] mx-auto fadeinUp"
+                    className="py-20 max-w-[1080px] w-[90%] mx-auto px-6 fadeinUp"
                 >
                     <SubHeading title="About Me" />
-                    <div className="flex flex-col max-w-5xl mx-auto sm:flex-row items-center sm:items-start gap-16">
+                    <div className="flex flex-col max-w-5xl mx-auto sm:flex-row items-center sm:items-center gap-14">
                         <img
                             className="sm:size-50 size-40 shrink-0  object-cover rounded-full shadow-[0_0_15px_2px_rgba(255,117,24,1)]"
                             src={face}
                             alt="My Face"
                         />
-                        <p className="text-[#737373]">
+                        <p className="text-[#9a9a9a] leading-relaxed max-w-[60ch]">
                             Hi I'm Chris, a{" "}
-                            <b>Software Engineer at IQHQ</b> and a
+                            <b className="text-foreground">Software Engineer at IQHQ</b> and a
                             Computer Science graduate from the University of
                             Manchester. I've built full-stack web applications
                             and enjoy tackling problems across the wider field
@@ -74,14 +74,14 @@ function App() {
 
                 <section
                     id="projects"
-                    className="py-8 sm:py-16 max-w-[80%] mx-auto"
+                    className="py-20 max-w-[1080px] w-[90%] mx-auto px-6"
                 >
                     <SubHeading title="My Projects" />
                     <section>
                         <Project>
                             <ProjectTitle title="Soullink" />
                             <img
-                                className="max-w-lg w-full mx-auto rounded-lg block duration-300 transition"
+                                className="max-w-lg w-full mx-auto rounded-[10px] border border-[#ececea] dark:border-[#2c2c2c] block duration-300 transition"
                                 src={soullink}
                                 alt="Screenshot of Soullink"
                             />
@@ -115,7 +115,7 @@ function App() {
                         <Project>
                             <ProjectTitle title="Signposting Knowledge Graph Tool" />
                             <img
-                                className="max-w-lg w-full mx-auto rounded-lg block duration-300 transition"
+                                className="max-w-lg w-full mx-auto rounded-[10px] border border-[#ececea] dark:border-[#2c2c2c] block duration-300 transition"
                                 src={signposting}
                                 alt="Screenshot of Signposting Knowledge Graph Tool"
                             />
@@ -141,7 +141,7 @@ function App() {
                         <Project>
                             <ProjectTitle title="Pathfinding Visualiser Tool " />
                             <img
-                                className="max-w-lg w-full mx-auto rounded-lg block duration-300 transition"
+                                className="max-w-lg w-full mx-auto rounded-[10px] border border-[#ececea] dark:border-[#2c2c2c] block duration-300 transition"
                                 src={pathfinding}
                                 alt="Screenshot of Pathfinding Visualiser Tool"
                             />
@@ -164,13 +164,13 @@ function App() {
 
                 <section
                     id="contact"
-                    className="py-8 sm:py-16 max-w-[80%] mx-auto"
+                    className="py-20 max-w-[1080px] w-[90%] mx-auto px-6"
                 >
                     <SubHeading title="Contact Me" />
-                    <p className="text-[#737373]">
+                    <p className="text-[#737373] leading-relaxed">
                         Please contact me directly at{" "}
                         <a
-                            className="underline"
+                            className="text-orange-primary font-medium no-underline"
                             href="mailto:christos.efstathiades@outlook.com"
                         >
                             christos.efstathiades@outlook.com{" "}
