@@ -3,5 +3,5 @@ export default function ProjectDescription({
 }: {
     children: React.ReactNode;
 }) {
-    return <p className="my-3">{children}</p>;
+    return <p className="my-3 text-[#9a9a9a]">{children}</p>;
 }
