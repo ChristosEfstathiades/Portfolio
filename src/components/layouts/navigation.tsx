@@ -13,21 +13,21 @@ const navItems: string[] = ["about", "projects", "contact"];
 
 export default function Navigation() {
     return (
-        <header className="sticky py-4  left-0 flow top-0  bg-white dark:bg-black z-2 shadow-sm">
+        <header className="sticky py-4  left-0 flow top-0  bg-white/85 dark:bg-black/85 z-2 border-b border-[#ececea] dark:border-[#2a2a2a] backdrop-blur backdrop-saturate-150">
             <div className="max-w-[80%] mx-auto flex justify-between items-center">
                 <a
                     href="#"
-                    className="text-orange-primary font-semibold text-xl sm:text-2xl"
+                    className="text-orange-primary font-semibold text-[22px] tracking-tight"
                 >
                     Chris Efstathiades
                 </a>
                 <nav>
-                    <ul className="sm:flex space-x-4 hidden sm:items-center">
+                    <ul className="sm:flex space-x-7 hidden sm:items-center">
                         {navItems.map((navItem, index) => {
                             return (
                                 <li
                                     key={index}
-                                    className="font-medium capitalize cursor-pointer transition hover:text-orange-primary"
+                                    className="font-medium text-[15px] capitalize cursor-pointer transition hover:text-orange-primary"
                                 >
                                     <a href={`#${navItem}`}>{navItem}</a>
                                 </li>
