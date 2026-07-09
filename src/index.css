@@ -6,7 +6,7 @@
     transform: translateY(0px);
     opacity: 1;
     background-size: 400% 400%;
-    animation: gradientShift 15s ease infinite;
+    animation: gradientShift 7.5s ease infinite;
 }
 
 .fadeinUp {
